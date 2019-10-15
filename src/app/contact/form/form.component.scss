@@ -1,0 +1,29 @@
+form{
+    background-color: rgba(216, 197, 161, 0.856);
+    height: 80vh;
+    padding-top: 1%;
+    div{
+        width: 80%;
+        margin: 0 auto;
+    }
+    input{
+        border-radius: 3px;
+    }
+    .submit{
+        margin: 2px auto !important;
+        text-align: center !important;
+            button{
+                background-color: white;
+                color: maroon;
+                border: maroon 1px solid !important;
+                font-weight: bold;
+                height: 30px;
+                width: 15%;
+                margin: 2% auto;
+            }
+            button:hover{
+                background-color: maroon;
+                color:white;
+            }
+    }
+}

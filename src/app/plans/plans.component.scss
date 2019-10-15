@@ -1,0 +1,25 @@
+.plans{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 90vh;
+    align-content: center;
+    div{
+        align-self: center;
+        button{
+            height: 200px;
+            width: 300px;
+            padding:2% 10% !important;
+            font-family: Raleway;
+            font-size: 3rem;
+            font-weight: bold;
+            color: rgb(114, 88, 15);
+            background-color: rgba(216, 197, 161, 0.856);
+            border-radius: 10px;
+            border: none;
+        }
+        button:hover{
+            border: rgb(114, 88, 15)2px solid;
+        }
+    }
+}

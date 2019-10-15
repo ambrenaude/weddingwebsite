@@ -1,0 +1,93 @@
+.presences {
+  background-color: rgba(216, 197, 161, 0.856);
+  height: 80vh;
+
+  form {
+    padding-top: 2%;
+
+    .search {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      padding-top: 2%;
+
+      input {
+        width: 20%;
+        border: none;
+      }
+
+      button {
+        margin-left: 2%;
+        border: none;
+      }
+    }
+
+    h4 {
+      text-align: center;
+    }
+
+    h3 {
+      text-align: center;
+      margin: 15px;
+    }
+
+
+
+    .present,
+    .allergies,
+    .accompagnant,
+    .allergiesbis {
+      display: flex;
+      flex-direction: row;
+        margin-top: 3%;
+
+      p {
+        display: block;
+        font-weight: bold;
+        width: 300px;
+      }
+
+      .question {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        width: 100%;
+
+        .form-check{
+            display: flex;
+            flex-direction: row;
+            margin-left: 2%;
+            
+            &input:last-child{
+                margin-left:2% !important;
+            }
+        }
+        input, select, label{
+            width: auto;
+            margin-left:2% !important;
+        }
+
+        select{
+            border-radius: 4px;
+        }
+      }
+
+    }
+
+  }
+
+  .submit {
+    margin: 2px auto !important;
+    text-align: center !important;
+    button{
+        color: maroon;
+        background-color: white;
+        font-weight: bold;
+        border: maroon 1px solid !important;
+    }
+    button:hover{
+        color: white;
+        background-color: maroon;
+    }
+  }
+}
