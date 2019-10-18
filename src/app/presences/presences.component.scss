@@ -1,6 +1,10 @@
 .presences {
   background-color: rgba(216, 197, 161, 0.856);
   height: 80vh;
+  @media screen and (max-width: 640px){
+    height: auto;
+    padding-top: 5%;
+  }
 
   form {
     padding-top: 2%;
@@ -14,6 +18,9 @@
       input {
         width: 20%;
         border: none;
+        @media screen and (max-width: 640px) {
+          width: 50%;
+        }
       }
 
       button {
@@ -52,6 +59,9 @@
         display: block;
         font-weight: bold;
         width: 300px;
+        @media screen and (max-width: 640px) {
+          width: 500px;
+        }
       }
 
       .question {
@@ -96,5 +106,6 @@
         color: white;
         background-color: maroon;
     }
+    margin: 10px auto !important;
   }
 }

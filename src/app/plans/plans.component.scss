@@ -4,6 +4,11 @@
     justify-content: space-around;
     height: 90vh;
     align-content: center;
+    @media screen and (max-width: 640px) {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+      }
     div{
         align-self: center;
         button{
@@ -13,10 +18,26 @@
             font-family: Raleway;
             font-size: 3rem;
             font-weight: bold;
-            color: rgb(114, 88, 15);
-            background-color: rgba(216, 197, 161, 0.856);
+            color: white;
+            background-position: top left;
             border-radius: 10px;
             border: none;
+
+            @media screen and (max-width: 640px) {
+                font-size: 2rem;
+                height: 200px;
+                width: 300px;
+                margin-top: 5%;
+              }
+        }
+        .mairie{
+            background-image: url('../../assets/images/mairie.png') !important;
+            background-size: cover;
+        }
+        .mas{
+            background-image: url('../../assets/images/15.jpg') !important;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         button:hover{
             border: rgb(114, 88, 15)2px solid;

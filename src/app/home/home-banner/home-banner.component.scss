@@ -7,19 +7,44 @@
   width:auto;
   color: white;
   padding-top: 7px !important;
+
+  @media screen and (max-width: 640px){
+    margin: 40% 0 !important;
+    padding-top: 0 !important;
+    background-position: top left;
+    background-size: cover;
+    min-height: 40vh;
+    height: auto;
+  }
+  @media (orientation: landscape){
+    background-position: bottom left;
+    background-size: cover;
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
+    height: 80vh;
+
+  }
+
   
   .accueil{
     background-color: rgba(216, 197, 161, 0.856);
+
   h1{
     font-family: 'Allura', cursive;
     font-size: 7rem;
     margin: 0;
     line-height: 1;
+    @media screen and (max-width: 640px) {
+      font-size: 5rem;
+    }
   }
   h2{
     font-family: 'Raleway', sans-serif;
     font-size: 4rem;
     margin: 0;
+    @media screen and (max-width: 640px) {
+      font-size: 2rem;
+    }
   }
   }
 }

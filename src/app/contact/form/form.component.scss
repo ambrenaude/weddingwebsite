@@ -2,6 +2,13 @@ form{
     background-color: rgba(216, 197, 161, 0.856);
     height: 80vh;
     padding-top: 1%;
+    @media screen and (max-width: 640px){
+        height: auto;
+        padding-top: 5%;
+      }
+    .alert{
+display: none;
+    }
     div{
         width: 80%;
         margin: 0 auto;
@@ -20,10 +27,14 @@ form{
                 height: 30px;
                 width: 15%;
                 margin: 2% auto;
+                @media screen and (max-width: 640px) {
+                    width: 40% !important;
+                }
             }
             button:hover{
                 background-color: maroon;
                 color:white;
             }
+
     }
 }

@@ -3,4 +3,7 @@ al-home-banner{
     margin: 0 !important;
     background-color: rgba(216, 197, 161, 0.856);
     height: 80vh;
+    @media screen and (max-width: 640px) {
+      height: auto;
+      }
 }

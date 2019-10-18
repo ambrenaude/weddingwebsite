@@ -5,8 +5,18 @@ body {
   max-width: 1200px;
   height: 90vh;
   background-image: url(../src/assets/images/jute.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
   margin: 0 auto;
-  overflow: hidden;
+  overflow: auto;
   font-family: 'Raleway', sans-serif;
+  @media screen and (max-width: 640px){
+    background-size: cover;
+    max-width: 980px;
+    max-height: auto;
+    height: 100%;    
+  }
+  @media (position: landscape){
+    max-height: 100%;
+  }
 }
-
