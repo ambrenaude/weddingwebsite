@@ -1,19 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './core/components/navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { HomeBannerComponent } from './home/home-banner/home-banner.component';
 import { PresencesComponent } from './presences/presences.component';
-import { QuestionsComponent } from './questions/questions.component';
 import { PlansComponent } from './plans/plans.component';
 import { ContactComponent } from './contact/contact.component';
 import { LogementsComponent } from './logements/logements.component';
 import { FormComponent } from './contact/form/form.component';
 import { MairieComponent } from './plans/mairie/mairie.component';
 import { MasComponent } from './plans/mas/mas.component';
+import { ContactService } from './contact/form/service/contact.service';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,6 @@ import { MasComponent } from './plans/mas/mas.component';
     HomeComponent,
     HomeBannerComponent,
     PresencesComponent,
-    QuestionsComponent,
     PlansComponent,
     ContactComponent,
     LogementsComponent,
@@ -31,10 +34,15 @@ import { MasComponent } from './plans/mas/mas.component';
     MasComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -18,8 +18,15 @@
 
       button {
         margin-left: 2%;
-        border: none;
-      }
+        color: maroon;
+        background-color: white;
+        font-weight: bold;
+        border: maroon 1px solid !important;
+    }
+    button:hover{
+        color: white;
+        background-color: maroon;
+    }
     }
 
     h4 {
