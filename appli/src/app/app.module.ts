@@ -8,9 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { HomeBannerComponent } from './home/home-banner/home-banner.component';
 import { PresencesComponent } from './presences/presences.component';
 import { PlansComponent } from './plans/plans.component';
-import { ContactComponent } from './contact/contact.component';
 import { LogementsComponent } from './logements/logements.component';
-import { FormComponent } from './contact/form/form.component';
 import { MairieComponent } from './plans/mairie/mairie.component';
 import { MasComponent } from './plans/mas/mas.component';
 
@@ -27,9 +25,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     HomeBannerComponent,
     PresencesComponent,
     PlansComponent,
-    ContactComponent,
     LogementsComponent,
-    FormComponent,
     MairieComponent,
     MasComponent
   ],
