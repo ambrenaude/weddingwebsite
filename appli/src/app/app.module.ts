@@ -13,7 +13,6 @@ import { LogementsComponent } from './logements/logements.component';
 import { FormComponent } from './contact/form/form.component';
 import { MairieComponent } from './plans/mairie/mairie.component';
 import { MasComponent } from './plans/mas/mas.component';
-import { ContactService } from './contact/form/service/contact.service';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -44,7 +43,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     HttpClientModule,
     AngularFontAwesomeModule
   ],
-  providers: [ContactService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
